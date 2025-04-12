@@ -1,193 +1,257 @@
 [
-    {
-      "id": "0001",
-      "name": "Safwan Mondal",
-      "age": 45,
-      "gender": "Male",
-      "admission_date": "2025-03-01",
-      "discharge_date": "2025-03-07",
-      "diagnosis": "Pneumonia",
-      "treatment": "Antibiotic therapy",
-      "procedures": ["Chest X-Ray", "Blood Test"],
-      "medications": ["Azithromycin", "Paracetamol"],
-      "doctor_notes": "Responded well to treatment. No complications.",
-      "test_results": "CBC normal, Chest X-Ray showed improvement",
-      "vitals": {
-        "BP": "120/80",
-        "Pulse": "76",
-        "Temperature": "98.6F"
-      }
-    },
-    {
-      "id": "0002",
-      "name": "Laraib Noorien",
-      "age": 32,
-      "gender": "Female",
-      "admission_date": "2025-02-18",
-      "discharge_date": "2025-02-22",
-      "diagnosis": "Appendicitis",
-      "treatment": "Appendectomy",
-      "procedures": ["Ultrasound", "Appendectomy"],
-      "medications": ["Ibuprofen", "Ceftriaxone"],
-      "doctor_notes": "Post-surgical recovery smooth.",
-      "test_results": "WBC elevated, Ultrasound showed inflamed appendix",
-      "vitals": {
-        "BP": "118/76",
-        "Pulse": "82",
-        "Temperature": "99.1F"
-      }
-    },
-    {
-      "id": "0003",
-      "name": "Suman Ghosh",
-      "age": 60,
-      "gender": "Male",
-      "admission_date": "2025-01-10",
-      "discharge_date": "2025-01-15",
-      "diagnosis": "Hypertension",
-      "treatment": "Lifestyle modification, beta-blockers",
-      "procedures": ["ECG", "Blood Pressure Monitoring"],
-      "medications": ["Atenolol", "Amlodipine"],
-      "doctor_notes": "Stable BP achieved.",
-      "test_results": "BP normalized with medication",
-      "vitals": {
-        "BP": "130/85",
-        "Pulse": "72",
-        "Temperature": "98.4F"
-      }
-    },
-    {
-      "id": "0004",
-      "name": "Kubra Ekram",
-      "age": 27,
-      "gender": "Female",
-      "admission_date": "2025-03-05",
-      "discharge_date": "2025-03-10",
-      "diagnosis": "Migraine",
-      "treatment": "Pain management, hydration",
-      "procedures": ["MRI", "Neurological Exam"],
-      "medications": ["Sumatriptan", "Paracetamol"],
-      "doctor_notes": "Symptoms relieved by day 3.",
-      "test_results": "MRI showed no abnormalities",
-      "vitals": {
-        "BP": "115/75",
-        "Pulse": "70",
-        "Temperature": "98.2F"
-      }
-    },
-    {
-      "id": "0005",
-      "name": "Suvodip Mojumdar",
-      "age": 50,
-      "gender": "Male",
-      "admission_date": "2025-03-12",
-      "discharge_date": "2025-03-16",
-      "diagnosis": "Type 2 Diabetes",
-      "treatment": "Diet control, insulin therapy",
-      "procedures": ["Fasting Blood Sugar", "HbA1c Test"],
-      "medications": ["Metformin", "Insulin"],
-      "doctor_notes": "Educated on diabetes management.",
-      "test_results": "HbA1c: 8.2%, FBS: 160 mg/dL",
-      "vitals": {
-        "BP": "125/80",
-        "Pulse": "78",
-        "Temperature": "98.7F"
-      }
-    },
-    {
-      "id": "0006",
-      "name": "Pranisha Saho",
-      "age": 41,
-      "gender": "Female",
-      "admission_date": "2025-01-20",
-      "discharge_date": "2025-01-24",
-      "diagnosis": "Gallstones",
-      "treatment": "Laparoscopic cholecystectomy",
-      "procedures": ["Ultrasound", "Laparoscopy"],
-      "medications": ["Ciprofloxacin", "Pantoprazole"],
-      "doctor_notes": "Recovery was uneventful.",
-      "test_results": "Ultrasound confirmed multiple gallstones",
-      "vitals": {
-        "BP": "122/78",
-        "Pulse": "80",
-        "Temperature": "98.6F"
-      }
-    },
-    {
-      "id": "0007",
-      "name": "Amir Sohel",
-      "age": 35,
-      "gender": "Male",
-      "admission_date": "2025-02-01",
-      "discharge_date": "2025-02-06",
-      "diagnosis": "Fractured arm",
-      "treatment": "Immobilization with cast",
-      "procedures": ["X-Ray", "Plaster Application"],
-      "medications": ["Ibuprofen"],
-      "doctor_notes": "Fracture aligned well.",
-      "test_results": "X-ray confirmed radial fracture",
-      "vitals": {
-        "BP": "118/78",
-        "Pulse": "74",
-        "Temperature": "98.5F"
-      }
-    },
-    {
-      "id": "0008",
-      "name": "Ritipa Das",
-      "age": 30,
-      "gender": "Female",
-      "admission_date": "2025-03-10",
-      "discharge_date": "2025-03-14",
-      "diagnosis": "Urinary Tract Infection",
-      "treatment": "Antibiotics and hydration",
-      "procedures": ["Urine Culture"],
-      "medications": ["Nitrofurantoin"],
-      "doctor_notes": "Symptoms improved rapidly.",
-      "test_results": "Positive culture for E. coli",
-      "vitals": {
-        "BP": "114/72",
-        "Pulse": "75",
-        "Temperature": "99.0F"
-      }
-    },
-    {
-      "id": "0009",
-      "name": "Aman",
-      "age": 29,
-      "gender": "Male",
-      "admission_date": "2025-02-12",
-      "discharge_date": "2025-02-15",
-      "diagnosis": "Viral Fever",
-      "treatment": "Supportive care",
-      "procedures": ["Blood Test"],
-      "medications": ["Paracetamol", "ORS"],
-      "doctor_notes": "Fever subsided by day 3.",
-      "test_results": "WBC slightly elevated",
-      "vitals": {
-        "BP": "116/74",
-        "Pulse": "84",
-        "Temperature": "101.2F"
-      }
-    },
-    {
-      "id": "0010",
-      "name": "Rima",
-      "age": 38,
-      "gender": "Female",
-      "admission_date": "2025-01-05",
-      "discharge_date": "2025-01-09",
-      "diagnosis": "Anemia",
-      "treatment": "Iron supplements, dietary change",
-      "procedures": ["CBC", "Iron Studies"],
-      "medications": ["Ferrous Sulfate"],
-      "doctor_notes": "Patient advised follow-up.",
-      "test_results": "Low hemoglobin and serum iron",
-      "vitals": {
-        "BP": "110/70",
-        "Pulse": "82",
-        "Temperature": "98.3F"
-      }
-    }
-  ]
-  
+  {
+    "id": "0001",
+    "name": "Safwan Mondal",
+    "age": 45,
+    "gender": "Male",
+    "admission_date": "2025-03-10",
+    "discharge_date": "2025-03-15",
+    "primary_consultant_name": "Dr. Suresh Sharma",
+    "speciality": "Cardiology",
+    "consultants": [
+      {"name": "Dr. Neha Patel", "speciality": "Neurology"},
+      {"name": "Dr. Arun Reddy", "speciality": "Gastroenterology"}
+    ],
+    "provisional_diagnosis": "Acute Myocardial Infarction",
+    "final_diagnosis": "Stable Angina",
+    "clinical_course_description": "Patient was admitted with chest pain, ECG abnormalities, and elevated troponins.",
+    "investigations_and_treatment": [
+      "ECG",
+      "Cardiac Enzyme Panel",
+      "Aspirin 75mg daily",
+      "Nitroglycerin",
+      "Oxygen therapy"
+    ],
+    "clinical_notes": [
+      "Vitals stable, no further chest pain post-treatment",
+      "Patient able to ambulate independently"
+    ],
+    "summary": "Patient improved significantly during hospitalization. Diagnosis confirmed as stable angina with no complications.",
+    "condition_at_discharge": "Stable",
+    "prescription": [
+      {"medication": "Aspirin", "dosage": "75mg daily"},
+      {"medication": "Nitroglycerin", "dosage": "As needed for chest pain"}
+    ],
+    "advice": [
+      "Avoid strenuous physical activity for 2 weeks",
+      "Follow up with cardiology in 1 month"
+    ],
+    "emergency_instructions": "In case of severe chest pain or shortness of breath, seek immediate medical help.",
+    "follow_up": "Cardiology on 2025-04-15"
+  },
+  {
+    "id": "P002",
+    "name": "Anjali Desai",
+    "age": 33,
+    "gender": "Female",
+    "admission_date": "2025-03-12",
+    "discharge_date": "2025-03-18",
+    "primary_consultant_name": "Dr. Meera Gupta",
+    "speciality": "Orthopedics",
+    "consultants": [
+      {"name": "Dr. Vinay Kumar", "speciality": "Pediatrics"}
+    ],
+    "provisional_diagnosis": "Fractured Tibia",
+    "final_diagnosis": "Closed Fracture",
+    "clinical_course_description": "Patient sustained a fall resulting in a tibial fracture. Surgery was performed successfully.",
+    "investigations_and_treatment": [
+      "X-ray",
+      "CT Scan of the leg",
+      "Pain management: Paracetamol 500mg"
+    ],
+    "clinical_notes": [
+      "No signs of infection at surgical site",
+      "Patient tolerated surgery well"
+    ],
+    "summary": "Patient made good progress post-surgery. Rehabilitation plan outlined for recovery.",
+    "condition_at_discharge": "Stable",
+    "prescription": [
+      {"medication": "Paracetamol", "dosage": "500mg every 6 hours"},
+      {"medication": "Ibuprofen", "dosage": "400mg every 8 hours"}
+    ],
+    "advice": [
+      "Avoid putting weight on the injured leg for 6 weeks",
+      "Physical therapy to begin in 1 week"
+    ],
+    "emergency_instructions": "If there is any significant pain or swelling, seek immediate medical attention.",
+    "follow_up": "Orthopedics on 2025-03-25"
+  },
+  {
+    "id": "P003",
+    "name": "Geeta Sharma",
+    "age": 60,
+    "gender": "Female",
+    "admission_date": "2025-03-05",
+    "discharge_date": "2025-03-10",
+    "primary_consultant_name": "Dr. Priya Iyer",
+    "speciality": "Endocrinology",
+    "consultants": [
+      {"name": "Dr. Ravi Joshi", "speciality": "Nephrology"}
+    ],
+    "provisional_diagnosis": "Diabetic Ketoacidosis",
+    "final_diagnosis": "Uncontrolled Diabetes with Ketosis",
+    "clinical_course_description": "Patient admitted with altered mental status and elevated glucose levels.",
+    "investigations_and_treatment": [
+      "Blood Glucose Monitoring",
+      "Serum Ketones",
+      "Insulin infusion"
+    ],
+    "clinical_notes": [
+      "Patient's glucose levels normalized post-treatment",
+      "No signs of organ failure"
+    ],
+    "summary": "Patient's diabetes management adjusted. Education on glucose monitoring and diet provided.",
+    "condition_at_discharge": "Stable",
+    "prescription": [
+      {"medication": "Insulin", "dosage": "As per sliding scale"},
+      {"medication": "Metformin", "dosage": "500mg twice daily"}
+    ],
+    "advice": [
+      "Monitor blood glucose regularly",
+      "Maintain a low-carb diet"
+    ],
+    "emergency_instructions": "If blood glucose exceeds 300mg/dL, seek emergency help.",
+    "follow_up": "Endocrinology on 2025-03-20"
+  },
+  {
+    "id": "P004",
+    "name": "Ravi Kumar",
+    "age": 72,
+    "gender": "Male",
+    "admission_date": "2025-03-07",
+    "discharge_date": "2025-03-12",
+    "primary_consultant_name": "Dr. Sunita Reddy",
+    "speciality": "Cardiology",
+    "consultants": [],
+    "provisional_diagnosis": "Congestive Heart Failure",
+    "final_diagnosis": "Chronic Heart Failure",
+    "clinical_course_description": "Patient admitted with worsening shortness of breath and peripheral edema.",
+    "investigations_and_treatment": [
+      "Echocardiogram",
+      "Chest X-ray",
+      "Diuretics for fluid management"
+    ],
+    "clinical_notes": [
+      "Symptoms improved with diuretic therapy",
+      "Patient encouraged to monitor weight daily"
+    ],
+    "summary": "Patient stabilized with diuretics. Discharged with follow-up instructions.",
+    "condition_at_discharge": "Stable",
+    "prescription": [
+      {"medication": "Furosemide", "dosage": "40mg daily"},
+      {"medication": "Lisinopril", "dosage": "10mg daily"}
+    ],
+    "advice": [
+      "Limit salt intake",
+      "Monitor weight and report any sudden weight gain"
+    ],
+    "emergency_instructions": "If experiencing sudden difficulty breathing or chest pain, seek medical help immediately.",
+    "follow_up": "Cardiology on 2025-03-25"
+  },
+  {
+    "id": "P005",
+    "name": "Sita Devi",
+    "age": 29,
+    "gender": "Female",
+    "admission_date": "2025-03-08",
+    "discharge_date": "2025-03-13",
+    "primary_consultant_name": "Dr. Ramesh Verma",
+    "speciality": "Infectious Disease",
+    "consultants": [
+      {"name": "Dr. Priya Nair", "speciality": "Pulmonology"}
+    ],
+    "provisional_diagnosis": "Severe Pneumonia",
+    "final_diagnosis": "Bacterial Pneumonia",
+    "clinical_course_description": "Patient admitted with fever, cough, and difficulty breathing. Blood cultures confirmed bacterial pneumonia.",
+    "investigations_and_treatment": [
+      "Blood Cultures",
+      "Chest X-ray",
+      "Intravenous Antibiotics"
+    ],
+    "clinical_notes": [
+      "Temperature normalized post-antibiotics",
+      "Patient remains on oxygen support"
+    ],
+    "summary": "Patient's pneumonia treated successfully. Oxygen therapy continued during hospitalization.",
+    "condition_at_discharge": "Stable",
+    "prescription": [
+      {"medication": "Amoxicillin", "dosage": "500mg three times daily"},
+      {"medication": "Paracetamol", "dosage": "500mg every 6 hours as needed"}
+    ],
+    "advice": [
+      "Continue antibiotics for 7 days",
+      "Increase fluid intake"
+    ],
+    "emergency_instructions": "If experiencing difficulty breathing or worsening symptoms, seek immediate help.",
+    "follow_up": "Pulmonology on 2025-03-20"
+  },
+  {
+    "id": "P006",
+    "name": "Arvind Patel",
+    "age": 54,
+    "gender": "Male",
+    "admission_date": "2025-03-09",
+    "discharge_date": "2025-03-14",
+    "primary_consultant_name": "Dr. Amit Agarwal",
+    "speciality": "Neurology",
+    "consultants": [],
+    "provisional_diagnosis": "Stroke",
+    "final_diagnosis": "Ischemic Stroke",
+    "clinical_course_description": "Patient presented with weakness on the right side and slurred speech.",
+    "investigations_and_treatment": [
+      "CT Scan",
+      "MRI of the Brain",
+      "Thrombolytic Therapy"
+    ],
+    "clinical_notes": [
+      "Patient showed improvement post-thrombolysis",
+      "Speech therapy initiated"
+    ],
+    "summary": "Patient's stroke managed with thrombolysis. Rehabilitation initiated.",
+    "condition_at_discharge": "Stable",
+    "prescription": [
+      {"medication": "Aspirin", "dosage": "81mg daily"},
+      {"medication": "Clopidogrel", "dosage": "75mg daily"}
+    ],
+    "advice": [
+      "Follow-up with neurology in 2 weeks",
+      "Speech therapy and physiotherapy as per plan"
+    ],
+    "emergency_instructions": "If experiencing severe headache, numbness, or difficulty speaking, seek immediate medical attention.",
+    "follow_up": "Neurology on 2025-03-23"
+  },
+  {
+    "id": "P007",
+    "name": "Pooja Singh",
+    "age": 38,
+    "gender": "Female",
+    "admission_date": "2025-03-11",
+    "discharge_date": "2025-03-16",
+    "primary_consultant_name": "Dr. Neelam Agarwal",
+    "speciality": "Gastroenterology",
+    "consultants": [],
+    "provisional_diagnosis": "Acid Reflux",
+    "final_diagnosis": "Gastroesophageal Reflux Disease (GERD)",
+    "clinical_course_description": "Patient admitted with frequent heartburn and regurgitation. Diagnosis confirmed after upper GI endoscopy.",
+    "investigations_and_treatment": [
+      "Upper GI Endoscopy",
+      "Esophageal pH Monitoring",
+      "Proton Pump Inhibitors (PPIs)"
+    ],
+    "clinical_notes": [
+      "Patient's symptoms improved with medication",
+      "Follow-up recommended for further management"
+    ],
+    "summary": "Patient's GERD managed with PPIs. Lifestyle and dietary modifications suggested.",
+    "condition_at_discharge": "Stable",
+    "prescription": [
+      {"medication": "Omeprazole", "dosage": "20mg daily"}
+    ],
+    "advice": [
+      "Avoid spicy and acidic foods",
+      "Elevate head while sleeping"
+    ],
+    "emergency_instructions": "If symptoms worsen or new symptoms like chest pain arise, seek medical help.",
+    "follow_up": "Gastroenterology on 2025-03-23"
+  }
+]

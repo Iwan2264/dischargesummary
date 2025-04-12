@@ -4,6 +4,10 @@ import json
 import streamlit as st
 from dotenv import load_dotenv
 from fpdf import FPDF
+import unicodedata
+
+def sanitize_text(text):
+    return unicodedata.normalize("NFKD", text).encode("latin-1", "ignore").decode("latin-1")
 
 load_dotenv(".env")
 api_key = os.getenv("GROQ_API_KEY")
@@ -88,8 +92,9 @@ def generate_discharge_pdf(patient_data, summary):
     pdf.set_font("Arial", 'B', 12)
     pdf.cell(0, 10, "Summary:", ln=True)
     pdf.ln(2)  # small vertical space before line
-    pdf.set_font("Arial", '', 11)
-    pdf.multi_cell(0, 8, summary)
+    pdf.set_font("Helvetica", size=11)  # Or 10
+    pdf.multi_cell(0, 5.5, sanitize_text(summary))
+
 
     # Add horizontal line separator
     pdf.ln(5)  # small vertical space before line
@@ -159,16 +164,56 @@ if st.button("Generate Summary"):
 
             # Prepare prompt
             prompt = f"""
-            You are a professional medical documentation assistant. Your task is to generate a formal hospital discharge summary based solely on the following structured patient data.
-
-            Do not include anything outside the data provided.
-
-            Output the summary in proper paragraph format with appropriate medical tone and coherence.
-
-            Patient Data:
-            {patient_data}
+            Given the following patient hospital data, generate a discharge summary. Follow the structure below strictly and make sure the output is clean, readable, and suitable for PDF printing using FPDF (avoid special symbols, markdown or formatting that would break in plain text):
+            PATIENT DETAILS:  
+            *Already included in the PDF template, do not repeat.*
+            CONSULTANTS INVOLVED:
+            Primary Consultant:
+            <primary_consultant_name>, <speciality>
+            Other Consultants:
+            <consultant_1_name> (<speciality>)
+            <consultant_2_name> (<speciality>)
+            ... (if any)
+            DIAGNOSIS:
+            Provisional Diagnosis: <provisional_diagnosis>  
+            Final Diagnosis: <final_diagnosis>
+            KEY FINDINGS AND CLINICAL COURSE:
+            <clinical_course_description>  
+            Mention presenting symptoms, relevant test results, clinical progression, any support provided, and response to treatment.
+            INVESTIGATIONS AND TREATMENT:
+            * <Test 1>
+            * <Test 2>
+            * <Medication with dosage and route>
+            * <Other treatments: physiotherapy, oxygen, etc.>
+            CLINICAL NOTES:
+            * <Any observations: vitals, mobility, diet, compliance, etc.>
+            SUMMARY:
+            Provide a very detailed clinical summary of the admission, highlighting diagnosis, major treatments, progression, and condition at discharg in this section. for example During his hospitalization, Mr. Mondal received antibiotic therapy for the treatment of pneumonia. Diagnostic
+studies included a Chest X-Ray and Blood Test, which showed improvement as evident from the Chest
+X-Ray report. Laboratory results revealed a normal Complete Blood Count (CBC).
+The patient responded well to treatment, and no complications were observed throughout his stay. On the
+day of discharge, his vital signs were stable, with a blood pressure of 120/80 mmHg, pulse rate of 76 beats
+per minute, and a temperature of 98.6°F.
+Medications prescribed at discharge include Azithromycin and Paracetamol.
+In conclusion, Mr. Mondal has demonstrated significant improvement and is being discharged in a stable
+condition.
+            CONDITION AT DISCHARGE:
+            <Stable / Unstable / Deceased>
+            PRESCRIPTION ON DISCHARGE:
+            1. <Medication> – <Dosage & Timing>
+            2. <Medication> – <Dosage & Timing>
+            3. ...
+            ADVICE:
+            * <Advice 1>
+            * <Advice 2>
+            * ...
+            EMERGENCY INSTRUCTIONS:
+            In case of <symptom1>, <symptom2>, or <symptom3>, report to the emergency department immediately.
+            FOLLOW-UP:
+            <Department> on <Follow-up Date>
+            Now generate the summary based on this sample data Patient Data (in JSON format):
+            {json.dumps(patient_data, indent=2)}
             """
-
             client = Groq()
 
             completion = client.chat.completions.create(
