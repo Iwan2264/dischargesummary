@@ -1,5 +1,6 @@
 *.pyc
 __pycache__/
+
 .env
 .vscode/
 .venv/
@@ -7,4 +8,5 @@ venv/
 discharge_summary_env/
 
 .devcontainer/
-.toml
+
+secret.toml
