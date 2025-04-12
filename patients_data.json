@@ -1,0 +1,193 @@
+[
+    {
+      "id": "0001",
+      "name": "Safwan Mondal",
+      "age": 45,
+      "gender": "Male",
+      "admission_date": "2025-03-01",
+      "discharge_date": "2025-03-07",
+      "diagnosis": "Pneumonia",
+      "treatment": "Antibiotic therapy",
+      "procedures": ["Chest X-Ray", "Blood Test"],
+      "medications": ["Azithromycin", "Paracetamol"],
+      "doctor_notes": "Responded well to treatment. No complications.",
+      "test_results": "CBC normal, Chest X-Ray showed improvement",
+      "vitals": {
+        "BP": "120/80",
+        "Pulse": "76",
+        "Temperature": "98.6F"
+      }
+    },
+    {
+      "id": "0002",
+      "name": "Laraib Noorien",
+      "age": 32,
+      "gender": "Female",
+      "admission_date": "2025-02-18",
+      "discharge_date": "2025-02-22",
+      "diagnosis": "Appendicitis",
+      "treatment": "Appendectomy",
+      "procedures": ["Ultrasound", "Appendectomy"],
+      "medications": ["Ibuprofen", "Ceftriaxone"],
+      "doctor_notes": "Post-surgical recovery smooth.",
+      "test_results": "WBC elevated, Ultrasound showed inflamed appendix",
+      "vitals": {
+        "BP": "118/76",
+        "Pulse": "82",
+        "Temperature": "99.1F"
+      }
+    },
+    {
+      "id": "0003",
+      "name": "Suman Ghosh",
+      "age": 60,
+      "gender": "Male",
+      "admission_date": "2025-01-10",
+      "discharge_date": "2025-01-15",
+      "diagnosis": "Hypertension",
+      "treatment": "Lifestyle modification, beta-blockers",
+      "procedures": ["ECG", "Blood Pressure Monitoring"],
+      "medications": ["Atenolol", "Amlodipine"],
+      "doctor_notes": "Stable BP achieved.",
+      "test_results": "BP normalized with medication",
+      "vitals": {
+        "BP": "130/85",
+        "Pulse": "72",
+        "Temperature": "98.4F"
+      }
+    },
+    {
+      "id": "0004",
+      "name": "Kubra Ekram",
+      "age": 27,
+      "gender": "Female",
+      "admission_date": "2025-03-05",
+      "discharge_date": "2025-03-10",
+      "diagnosis": "Migraine",
+      "treatment": "Pain management, hydration",
+      "procedures": ["MRI", "Neurological Exam"],
+      "medications": ["Sumatriptan", "Paracetamol"],
+      "doctor_notes": "Symptoms relieved by day 3.",
+      "test_results": "MRI showed no abnormalities",
+      "vitals": {
+        "BP": "115/75",
+        "Pulse": "70",
+        "Temperature": "98.2F"
+      }
+    },
+    {
+      "id": "0005",
+      "name": "Suvodip Mojumdar",
+      "age": 50,
+      "gender": "Male",
+      "admission_date": "2025-03-12",
+      "discharge_date": "2025-03-16",
+      "diagnosis": "Type 2 Diabetes",
+      "treatment": "Diet control, insulin therapy",
+      "procedures": ["Fasting Blood Sugar", "HbA1c Test"],
+      "medications": ["Metformin", "Insulin"],
+      "doctor_notes": "Educated on diabetes management.",
+      "test_results": "HbA1c: 8.2%, FBS: 160 mg/dL",
+      "vitals": {
+        "BP": "125/80",
+        "Pulse": "78",
+        "Temperature": "98.7F"
+      }
+    },
+    {
+      "id": "0006",
+      "name": "Pranisha Saho",
+      "age": 41,
+      "gender": "Female",
+      "admission_date": "2025-01-20",
+      "discharge_date": "2025-01-24",
+      "diagnosis": "Gallstones",
+      "treatment": "Laparoscopic cholecystectomy",
+      "procedures": ["Ultrasound", "Laparoscopy"],
+      "medications": ["Ciprofloxacin", "Pantoprazole"],
+      "doctor_notes": "Recovery was uneventful.",
+      "test_results": "Ultrasound confirmed multiple gallstones",
+      "vitals": {
+        "BP": "122/78",
+        "Pulse": "80",
+        "Temperature": "98.6F"
+      }
+    },
+    {
+      "id": "0007",
+      "name": "Amir Sohel",
+      "age": 35,
+      "gender": "Male",
+      "admission_date": "2025-02-01",
+      "discharge_date": "2025-02-06",
+      "diagnosis": "Fractured arm",
+      "treatment": "Immobilization with cast",
+      "procedures": ["X-Ray", "Plaster Application"],
+      "medications": ["Ibuprofen"],
+      "doctor_notes": "Fracture aligned well.",
+      "test_results": "X-ray confirmed radial fracture",
+      "vitals": {
+        "BP": "118/78",
+        "Pulse": "74",
+        "Temperature": "98.5F"
+      }
+    },
+    {
+      "id": "0008",
+      "name": "Ritipa Das",
+      "age": 30,
+      "gender": "Female",
+      "admission_date": "2025-03-10",
+      "discharge_date": "2025-03-14",
+      "diagnosis": "Urinary Tract Infection",
+      "treatment": "Antibiotics and hydration",
+      "procedures": ["Urine Culture"],
+      "medications": ["Nitrofurantoin"],
+      "doctor_notes": "Symptoms improved rapidly.",
+      "test_results": "Positive culture for E. coli",
+      "vitals": {
+        "BP": "114/72",
+        "Pulse": "75",
+        "Temperature": "99.0F"
+      }
+    },
+    {
+      "id": "0009",
+      "name": "Aman",
+      "age": 29,
+      "gender": "Male",
+      "admission_date": "2025-02-12",
+      "discharge_date": "2025-02-15",
+      "diagnosis": "Viral Fever",
+      "treatment": "Supportive care",
+      "procedures": ["Blood Test"],
+      "medications": ["Paracetamol", "ORS"],
+      "doctor_notes": "Fever subsided by day 3.",
+      "test_results": "WBC slightly elevated",
+      "vitals": {
+        "BP": "116/74",
+        "Pulse": "84",
+        "Temperature": "101.2F"
+      }
+    },
+    {
+      "id": "0010",
+      "name": "Rima",
+      "age": 38,
+      "gender": "Female",
+      "admission_date": "2025-01-05",
+      "discharge_date": "2025-01-09",
+      "diagnosis": "Anemia",
+      "treatment": "Iron supplements, dietary change",
+      "procedures": ["CBC", "Iron Studies"],
+      "medications": ["Ferrous Sulfate"],
+      "doctor_notes": "Patient advised follow-up.",
+      "test_results": "Low hemoglobin and serum iron",
+      "vitals": {
+        "BP": "110/70",
+        "Pulse": "82",
+        "Temperature": "98.3F"
+      }
+    }
+  ]
+  
