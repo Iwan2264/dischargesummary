@@ -89,8 +89,6 @@ def generate_discharge_pdf(patient_data, summary):
     pdf.line(10, pdf.get_y(), 200, pdf.get_y())  # x1, y1, x2, y2  
     
     #Main Summary
-    pdf.set_font("Arial", 'B', 12)
-    pdf.cell(0, 10, "Summary:", ln=True)
     pdf.ln(2)  # small vertical space before line
     pdf.set_font("Helvetica", size=11)  # Or 10
     pdf.multi_cell(0, 5.5, sanitize_text(summary))
@@ -102,11 +100,14 @@ def generate_discharge_pdf(patient_data, summary):
     pdf.set_line_width(0.5)
     pdf.line(10, pdf.get_y(), 200, pdf.get_y())  # x1, y1, x2, y2
 
-    # Treating Consultant Section
     pdf.set_font("Arial", 'B', 11)
     pdf.cell(0, 8, "Treating Consultant / Authorized Team Doctor :", ln=1)
+    # Set the consultant's name from the JSON data
+    main_consultant_name = patient_data["primary_consultant_name"]  # Get the main consultant's name from the JSON
     pdf.set_font("Arial", '', 11)
-    pdf.cell(0, 8, "Name: Dr. _________________________", ln=1)
+    pdf.cell(0, 8, f"Name: {main_consultant_name}", ln=1)  # Insert the name into the PDF
+
+    # Optional: Signature field (you can leave it blank or add more info)
     pdf.cell(0, 8, "Signature: _________________________", ln=1)
 
     # Divider line
