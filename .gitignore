@@ -7,3 +7,4 @@ venv/
 discharge_summary_env/
 
 .devcontainer/
+secret.toml
